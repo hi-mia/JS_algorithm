@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a,b,c){
+                let answer="YES", max; //max: 가장 큰 막대기 길이
+                let sum = a+b+c; //세 막대의 총합
+                
+                if(a>b) max=a;
+                else max=b;
+                if(c>max) max=c; //max에는 a,b,c 중 가장 큰 값이 저장되어있음
+                
+                if((sum-max)<=max) answer = "NO";
+
+                return answer;
+            }
+
+            console.log(solution(13,33,17));
+        
+        </script>
+    </body>
+</html>
+
+<!--
+02. 삼각형 판별하기
+
+ 짧은 막대 2개의 길이 합이 가장 긴 막대기의 길이보다 커야지
+ 삼각형 성립
+
+-->

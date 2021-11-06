@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n){
+                let answer = Math.ceil(n/12);
+
+                return answer;
+            }
+
+            console.log(solution(178));
+        </script>
+    </body>
+</html>
+
+<!--
+03. 연필 개수 - Math 객체의 함수들을 알아보자
+25/12 = 12*2 + 1 (2다스 + 부족한 1개)
+
+나머지가 있으면 못 받는 학생 발생 -> 1다스 더 시켜야 함
+
+방법 1) % 연산자 사용해서 몫이 있으면(0이 아니라면) +1을 시켜준다
+방법 2) 소수점이 조금이라도 있으면 자리를 올려버리는/올림시키는 Math.ceil함수
+
+Math객체에는 좋은 함수가 많다. 
+mozilla 사이트에 들어가보자(구글링 해보자)
+
+let answer = Math.ceil(2.111); //올림
+let answer = Math.floor(2.111); //내림
+let answer = Math.round(2.5); //반올림
+let answer = Math.sqrt(16); //제곱근
+
+-->
